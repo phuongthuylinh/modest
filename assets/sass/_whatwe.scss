@@ -1,0 +1,38 @@
+.whatwe {
+    height: 500px;
+    &-title {
+        padding: 30px 0;
+    }
+
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 350px;
+
+        & li {
+            text-wrap: wrap;
+            width: 250px;
+            text-align: center;
+        }
+    }
+
+    &-list {
+        &-title {
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+        &-dec {
+            color: #8d8f92;
+        }
+    }
+
+    @include mobile{
+        height: 700px;
+       & ul{
+
+        }
+    }
+}

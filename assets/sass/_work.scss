@@ -1,0 +1,55 @@
+.work {
+    background: #3a454d;
+    height: 850px;
+
+    &-title {
+        color: white;
+        font-size: 20px;
+        padding: 30px 0;
+    }
+
+    &-list {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            height: 600px;
+
+            li{
+                &:hover{
+                    background-image: url(../img/work/hover.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        margin: 50px auto;
+        display: block;
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        height: 40px;
+        width: 150px;
+
+        &:hover {
+            background-color: #23b7a4;
+        }
+    }
+    @include mobile{
+        height: 1850px;
+        &-list{
+            ul{
+                margin: auto;
+                li{
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

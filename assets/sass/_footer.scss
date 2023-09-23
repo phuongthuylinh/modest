@@ -1,0 +1,99 @@
+footer {
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    &-list {
+        padding-top: 80px;
+        width: 500px;
+        height: 300px;
+
+        &-content {
+            padding-top: 30px;
+        }
+
+        &-dec{
+            padding: 30px 0;
+        }
+    }
+
+    &-user {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    &-name {
+        width: 220px;
+    }
+
+    &-email {
+        width: 220px;
+    }
+
+    &-field {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-message {
+        position: absolute;
+        background: white;
+        right: 0;
+        margin-right: 100px;
+        margin-top: -80px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px #888888;
+    }
+}
+
+.footer-copyright {
+    background-color: #3a454d;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+}
+
+.copyright-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright-list {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: white;
+    }
+}
+
+.footer-contact{
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+}
+
+.contact{
+    @include mobile{
+        &-list{
+            width: 100%;
+            &-title{
+                
+            }
+        }
+        &-message {
+            position: relative;
+            margin: 0 0 ;
+        }
+        &-more{
+            width: 660px;
+            height: 160px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+header {
+}
+
+.navigation-desktop{
+    
+}
+
+.navigation {
+    background-color: #1d2126;
+
+    &-dec {
+        display: flex;
+        justify-content: space-between;
+        width: 1190px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    &-logo {
+        & img {
+            width: 70px;
+            cursor: pointer;
+        }
+    }
+
+    &-list {
+        color: #a4aead;
+        flex-direction: row;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+
+        &:hover {
+            color: #23b7a4;
+            border: 1px solid #23b7a4;
+            cursor: pointer;
+        }
+    }
+    @include mobile{
+        display: none;
+
+        @include mobile {
+            
+        }
+    }
+}
+
+
+
+.welcome {
+    background-image: url(../img/header/banner.jpg);
+    background-repeat: no-repeat;
+    padding: 230px 0 320px 0;
+
+    &-title {
+        font-size: 30px;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &-dec {
+        color: #fff;
+        padding-top: 26px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    &-btn {
+        padding-top: 30px;
+
+        & button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            height: 40px;
+            width: 90px;
+            text-align: center;
+            border-radius: 5px;
+            &:hover {
+                background-color: #23b7a4;
+            }
+        }
+
+        &-video {
+            margin-left: 10px;
+        }
+    }
+
+    @include mobile{
+        &-title{
+            text-align: center;
+        }
+        &-dec{
+            text-align: center;
+        }
+        &-btn{
+            text-align: center;
+        }
+    }
+}
